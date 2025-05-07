@@ -1,3 +1,7 @@
+html {
+    background-color: #333333; /* 背景を黒に設定 */
+}
+
 body {
     background-color: #333333; /* 背景を黒に設定 */
     color: #fff; /* テキストを白に設定 */
