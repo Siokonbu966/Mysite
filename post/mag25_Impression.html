@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>磁石祭ZEROに参加してきたおはなし</title>
+    <link rel="stylesheet" href="../css/styles_posts.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Blog</a></li>
+                <!--
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+
+                crafting...
+
+                -->
+            </ul>
+        </nav>
+    <main>
+        <article>
+            <div class="article-contents">
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9f2.svg" alt="🧲" width="96" height="96">
+                <h1 id="article-title">磁石祭ZEROに参加してきたおはなし</h1>
+                <p>投稿日: <time datetime="2025-05-07">2025年5月7日</time></p>
+            </div>
+            <section id="content">
+                <!-- Markdown の内容がここに挿入されます -->
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Siokonbu966</p>
+    </footer>
+    <script>
+        // Markdown ファイルを読み込んで表示
+        async function loadAndDisplayMarkdown(filePath) {
+          try {
+            const response = await fetch(filePath);
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const markdownText = await response.text();
+            const htmlOutput = document.getElementById('content');
+            htmlOutput.innerHTML = marked.parse(markdownText);
+          } catch (error) {
+            console.error("Markdownファイルの読み込みエラー:", error);
+            document.getElementById('content').textContent = "Markdownファイルの読み込みに失敗しました。";
+          }
+        }
+
+        // 表示したいMarkdownファイルのパスを指定
+        const markdownFilePath = '../markdowns/mag25_Impression.md';
+        loadAndDisplayMarkdown(markdownFilePath);
+    </script>
+</body>
+</html>

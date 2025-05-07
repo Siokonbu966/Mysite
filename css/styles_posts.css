@@ -1,0 +1,113 @@
+body {
+    background-color: #333333; /* 背景を黒に設定 */
+    color: #fff; /* テキストを白に設定 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* ヘッダーの背景色 */
+    padding: 1rem 0; /* 上下の余白を追加 */
+}
+
+header nav ul {
+    list-style: none; /* リストマーカーを非表示に */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* ナビゲーションを中央揃え */
+    gap: 20px; /* 各リンク間のスペースを追加 */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* ボタンの内側余白を設定 */
+    color: #fff; /* テキストを白に設定 */
+    text-decoration: none; /* 下線を削除 */
+    font-weight: bold;
+    border-radius: 5px; /* ボタンを丸みのある形に */
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+}
+
+header nav ul li a:hover {
+    background-color: #777; /* ホバー時の背景色を変更 */
+    transform: translateY(-3px); /* ホバー時に少し浮き上がる */
+}
+
+header nav ul li a:active {
+    transform: translateY(0); /* クリック時に元の位置に戻る */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を元に戻す */
+}
+
+.article-contents {
+    text-align: center; /* ヘッダーを右揃えに */
+    padding-bottom: 1rem; /* ヘッダーの下に余白を追加 */
+}
+
+.article-contents img {
+    margin-top: 2rem; /* 画像の上に余白を追加 */
+}
+
+footer {
+    background-color: #333333; /* フッターの背景を濃いグレーに設定 */
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 40px; /* フッターと本文の間に余白を追加 */
+    border-top: 2px solid #ccc; /* フッターの上にボーダーを追加 */
+}
+
+ul {
+    list-style: none; /* リストマーカーを非表示に */
+    padding: 0;
+    margin: 0;
+    display: block; /* フレックスレイアウトを解除 */
+}
+
+ul li {
+    margin-bottom: 20px; /* 各記事間にスペースを追加 */
+}
+
+main {
+    display: flex;
+    justify-content: center; /* 本文全体を中央揃え */
+    padding: 20px;
+}
+
+article {
+    max-width: 800px; /* 本文の最大幅を設定 */
+    width: 100%; /* 幅を100%に設定してレスポンシブ対応 */
+    background-color: #444; /* 背景色を少し明るいグレーに設定 */
+    padding: 5rem; /* 内側の余白を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 軽い影を追加 */
+}
+
+h1 {
+    text-align: center; /* タイトルを中央揃えに */
+    font-size: 2.5rem; /* タイトルの文字サイズを大きく */
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#content {
+    text-align: left; /* 文章を左揃えに */
+    line-height: 1.8; /* 行間を広げて読みやすく */
+    margin-top: 20px;
+}
+
+#content img {
+    max-width: 100%; /* 画像をコンテナ内に収める */
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}

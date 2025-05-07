@@ -1,0 +1,144 @@
+body {
+    background-color: #333333; /* 背景を黒に設定 */
+    color: #fff; /* テキストを白に設定 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* ヘッダーの背景色 */
+    padding: 1rem 0; /* 上下の余白を追加 */
+}
+
+header nav ul {
+    list-style: none; /* リストマーカーを非表示に */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* ナビゲーションを中央揃え */
+    gap: 20px; /* 各リンク間のスペースを追加 */
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* ボタンの内側余白を設定 */
+    color: #fff; /* テキストを白に設定 */
+    text-decoration: none; /* 下線を削除 */
+    font-weight: bold;
+    border-radius: 5px; /* ボタンを丸みのある形に */
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+}
+
+header nav ul li a:hover {
+    background-color: #777; /* ホバー時の背景色を変更 */
+    transform: translateY(-3px); /* ホバー時に少し浮き上がる */
+}
+
+header nav ul li a:active {
+    transform: translateY(0); /* クリック時に元の位置に戻る */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を元に戻す */
+}
+
+ul {
+    list-style: none; /* リストマーカーを非表示に */
+    padding: 0;
+    margin: 0;
+    display: block; /* フレックスレイアウトを解除 */
+}
+
+ul li {
+    margin-bottom: 20px; /* 各記事間にスペースを追加 */
+}
+
+.article-card {
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    text-decoration: none;
+    color: #333;
+    background-color: #666666; /* 背景を薄いグレーに設定 */
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* 修正箇所 */
+    max-width: 600px; /* 最大幅を設定 */
+    margin-left: auto; /* 中央揃え */
+    margin-right: auto; /* 中央揃え */
+}
+
+.article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.article-content {
+    flex: 1; /* 残りのスペースを占有 */
+    max-width: 400px; /* 最大幅を設定して横幅を制限 */
+    margin-left: 5rem; /* 画像とテキストの間にスペースを追加 */
+    text-align: center; /* テキストを中央揃えに */
+    overflow: hidden; /* 必要に応じてテキストがはみ出さないようにする */
+    text-overflow: ellipsis; /* テキストが長すぎる場合に省略記号を表示 */
+    white-space: nowrap; /* テキストを1行に制限 */
+}
+
+.article-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.article-content p {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.article-content time {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+.article-card-contents {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0; /* main の下の余白をリセット */
+}
+
+footer {
+    background-color: #333; /* フッターの背景を濃いグレーに設定 */
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 0; /* footer の上の余白をリセット */
+    border-top: 2px solid #ccc; /* フッターの上にボーダーを追加 */
+}
+
+article h3 {
+    text-align: center; /* 親要素である h3 を中央揃えに */
+}
+
+h1 {
+    font-size: 2.5rem; /* 文字サイズを大きくする */
+    margin-left: 0; /* 左側の余白をリセット */
+    margin-bottom: 20px; /* 下に余白を追加して見た目を整える */
+    padding-right: 32rem; /* 記事リンクの内側と揃える */
+    color: #fff; /* 必要に応じて色を調整 */
+}
