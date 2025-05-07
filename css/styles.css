@@ -46,7 +46,7 @@ header nav ul li a:active {
 
 ul {
     list-style: none; /* リストマーカーを非表示に */
-    padding: 0;
+    padding: 0; /* 上下の余白を自動調整 */
     margin: 0;
     display: block; /* フレックスレイアウトを解除 */
 }
@@ -116,18 +116,15 @@ ul li {
 main {
     padding: 20px;
     text-align: center;
-    margin-bottom: 0; /* main の下の余白をリセット */
 }
 
 footer {
     background-color: #333; /* フッターの背景を濃いグレーに設定 */
     color: #ccc;
     text-align: center;
-    padding: 1rem;
-    bottom: 0;
+    padding-top: 1rem;
     width: 100%;
     font-size: 0.9rem;
-    margin-top: 0; /* footer の上の余白をリセット */
     border-top: 2px solid #ccc; /* フッターの上にボーダーを追加 */
 }
 
