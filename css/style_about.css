@@ -48,75 +48,6 @@ header nav ul li a:active {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を元に戻す */
 }
 
-ul {
-    list-style: none; /* リストマーカーを非表示に */
-    padding: 0; /* 上下の余白を自動調整 */
-    margin: 0;
-    display: block; /* フレックスレイアウトを解除 */
-}
-
-ul li {
-    margin-bottom: 20px; /* 各記事間にスペースを追加 */
-}
-
-.article-card {
-    display: flex;
-    align-items: center; /* 縦方向の中央揃え */
-    text-decoration: none;
-    color: #333;
-    background-color: #666666; /* 背景を薄いグレーに設定 */
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    /* 修正箇所 */
-    max-width: 600px; /* 最大幅を設定 */
-    margin-left: auto; /* 中央揃え */
-    margin-right: auto; /* 中央揃え */
-}
-
-.article-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.article-content {
-    flex: 1; /* 残りのスペースを占有 */
-    max-width: 400px; /* 最大幅を設定して横幅を制限 */
-    margin-left: 5rem; /* 画像とテキストの間にスペースを追加 */
-    text-align: center; /* テキストを中央揃えに */
-    overflow: hidden; /* 必要に応じてテキストがはみ出さないようにする */
-    text-overflow: ellipsis; /* テキストが長すぎる場合に省略記号を表示 */
-    white-space: nowrap; /* テキストを1行に制限 */
-}
-
-.article-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-.article-content p {
-    margin: 0 0 10px;
-    font-size: 0.9rem;
-    color: #ffffff;
-}
-
-.article-content time {
-    font-size: 0.8rem;
-    color: #cccccc;
-}
-
-.article-card-contents {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    align-items: center; /* 縦方向の中央揃え */
-}
-
 main {
     padding: 20px;
     text-align: center;
@@ -130,10 +61,6 @@ footer {
     width: 100%;
     font-size: 0.9rem;
     border-top: 2px solid #ccc; /* フッターの上にボーダーを追加 */
-}
-
-article h3 {
-    text-align: center; /* 親要素である h3 を中央揃えに */
 }
 
 h1 {
